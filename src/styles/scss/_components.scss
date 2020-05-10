@@ -1,0 +1,42 @@
+.marginalie{
+  font-family: Raleway;
+  color: $decoration-color;
+
+  @media only screen and (min-width: $vp-small){
+    padding-right: $m;
+    float: left;
+    width: 20rem;
+    margin-left: -20rem;
+    margin-bottom: 0;
+    text-align: right;
+    border-left: none;
+  }
+}
+
+.main-header{
+  background-image: url(/src/images/NGC_2818_by_the_Hubble_Space_Telescope.jpg);
+  padding: $m;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__headline{
+    color: $lightest;
+    text-shadow: 4px 4px #000000;
+  }
+}
+
+.main-content{
+  padding: $m;
+  max-width: $vp-small;
+
+  transition: margin 0.2s;
+
+  @media only screen and (min-width: $vp-small){
+  margin-left: $width-marginalie;
+
+  }
+}
